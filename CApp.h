@@ -4,6 +4,7 @@
     #define _CAPP_H_
 
 #include <SDL/SDL.h>
+#include <math.h>
 #include "SDL/SDL_ttf.h"
 
 #include "Define.h"
@@ -39,6 +40,8 @@ class CApp : public CEvent {
         	void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
 
             void OnExit();
+
+            void OnLButtonDown(int mX, int mY);
 
         void Loop();
         void Render();

@@ -15,6 +15,20 @@
 using namespace std;
 
 //==============================================================================
+
+enum {
+    DIRECTION_NORTH = 0,
+
+    DIRECTION_NORTH_EAST,
+    DIRECTION_EAST,
+    DIRECTION_SOUTH_EAST,
+    DIRECTION_SOUTH,
+    DIRECTION_SOUTH_WEST,
+    DIRECTION_WEST,
+    DIRECTION_NORTH_WEST
+};
+
+
 class CEntity {
     public:
         static std::vector<CEntity*>    EntityList;
@@ -30,6 +44,7 @@ class CEntity {
 
         int             Width;
         int             Height;
+        int             Direction;
 
         string          CurrentAnimation;
         map<string,
@@ -55,7 +70,9 @@ class CEntity {
 
 		virtual void SetAnimation(string Name);
 
-		virtual void MoveBy (int X, int Y);
+		virtual void MoveBy (float X, float Y);
+
+		virtual void SetDirection (int Direction);
 };
 
 //==============================================================================

@@ -9,19 +9,30 @@ void CApp::OnEvent(SDL_Event* Event) {
 //==============================================================================
 void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 	switch(sym) {
-	    /*
-		case SDLK_UP: 	 CCamera::CameraControl.Move( 0,  5); CPlayer::Player.SetAnimation("WalkNorth"); break;
-		case SDLK_DOWN:  CCamera::CameraControl.Move( 0, -5); CPlayer::Player.SetAnimation("WalkSouth"); break;
-		case SDLK_LEFT:  CCamera::CameraControl.Move( 5,  0); CPlayer::Player.SetAnimation("WalkWest");  break;
-		case SDLK_RIGHT: CCamera::CameraControl.Move(-5,  0); CPlayer::Player.SetAnimation("WalkEast");  break;
-        */
-        case SDLK_UP: 	 CPlayer::Player.MoveBy( 0,  2); CPlayer::Player.SetAnimation("WalkNorth"); break;
-		case SDLK_DOWN:  CPlayer::Player.MoveBy( 0, -2); CPlayer::Player.SetAnimation("WalkSouth"); break;
-		case SDLK_LEFT:  CPlayer::Player.MoveBy( 2,  0); CPlayer::Player.SetAnimation("WalkWest");  break;
-		case SDLK_RIGHT: CPlayer::Player.MoveBy(-2,  0); CPlayer::Player.SetAnimation("WalkEast");  break;
-		default: {
-		    //CPlayer::Player.SetAnimation("IdleEast");
-		}
+        case SDLK_UP:
+            CPlayer::Player.MoveBy( 0,  2);
+            CPlayer::Player.SetAnimation("WalkNorth");
+            CPlayer::Player.SetDirection(DIRECTION_NORTH);
+            break;
+		case SDLK_DOWN:
+		    CPlayer::Player.MoveBy( 0, -2);
+		    CPlayer::Player.SetAnimation("WalkSouth");
+		    CPlayer::Player.SetDirection(DIRECTION_SOUTH);
+		    break;
+		case SDLK_LEFT:
+		    CPlayer::Player.MoveBy( 2,  0);
+		    CPlayer::Player.SetAnimation("WalkWest");
+		    CPlayer::Player.SetDirection(DIRECTION_WEST);
+		    break;
+		case SDLK_RIGHT:
+		    CPlayer::Player.MoveBy(-2,  0);
+		    CPlayer::Player.SetAnimation("WalkEast");
+		    CPlayer::Player.SetDirection(DIRECTION_EAST);
+		    break;
+		default:
+		    {
+
+            }
 	}
 }
 
@@ -36,6 +47,12 @@ void CApp::OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode) {
 		    //CPlayer::Player.SetAnimation("IdleEast");
 		}
 	}
+}
+//------------------------------------------------------------------------------
+void CApp::OnLButtonDown(int mX, int mY)
+{
+
+//  CPlayer::Player.MoveBy( 0, -2);
 }
 //------------------------------------------------------------------------------
 void CApp::OnExit() {

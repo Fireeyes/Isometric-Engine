@@ -87,10 +87,15 @@ void CEntity::SetAnimation(std::string Name)
     Anim_Control.MaxFrames = Animations[Name].MaxFrames;
 }
 //------------------------------------------------------------------------------
-void CEntity::MoveBy(int X, int Y)
+void CEntity::MoveBy(float X, float Y)
 {
     this->X += X;
     this->Y += Y;
 }
+//------------------------------------------------------------------------------
+void CEntity::SetDirection (int Direction)
+{
+    this->Direction = Direction;
 
+}
 //==============================================================================

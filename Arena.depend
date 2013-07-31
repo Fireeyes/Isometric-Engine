@@ -115,3 +115,113 @@
 
 1375253427 c:\users\neagu cristian\desktop\development\arena\helper.h
 
+1375249920 source:c:\shared\isometric engine\isometric-engine\canimation.cpp
+	"CAnimation.h"
+
+1375037058 c:\shared\isometric engine\isometric-engine\canimation.h
+	<SDL/SDL.h>
+
+1375173418 source:c:\shared\isometric engine\isometric-engine\capp.cpp
+	"CApp.h"
+
+1375263827 c:\shared\isometric engine\isometric-engine\capp.h
+	<SDL/SDL.h>
+	<math.h>
+	"SDL/SDL_ttf.h"
+	"Define.h"
+	"Debug.h"
+	"CArea.h"
+	"CCamera.h"
+	"CEntity.h"
+	"CEvent.h"
+	"CSurface.h"
+	"CPlayer.h"
+
+1375174263 c:\shared\isometric engine\isometric-engine\define.h
+
+1375265286 c:\shared\isometric engine\isometric-engine\debug.h
+	"SDL/SDL_ttf.h"
+	<string>
+	<sstream>
+	"CPlayer.h"
+	<math.h>
+
+1375037167 c:\shared\isometric engine\isometric-engine\carea.h
+	"CMap.h"
+
+1375173857 c:\shared\isometric engine\isometric-engine\cmap.h
+	<SDL/SDL.h>
+	<vector>
+	"CTile.h"
+	"CSurface.h"
+
+1375247727 c:\shared\isometric engine\isometric-engine\ctile.h
+	"Define.h"
+	<vector>
+
+1375037167 c:\shared\isometric engine\isometric-engine\csurface.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+
+1375037167 c:\shared\isometric engine\isometric-engine\ccamera.h
+	<SDL/SDL.h>
+	"Define.h"
+
+1375263593 c:\shared\isometric engine\isometric-engine\centity.h
+	<string.h>
+	<iostream>
+	<utility>
+	<vector>
+	<map>
+	"CAnimation.h"
+	"CSurface.h"
+
+1374951221 c:\shared\isometric engine\isometric-engine\cevent.h
+	<SDL/SDL.h>
+
+1375249129 c:\shared\isometric engine\isometric-engine\cplayer.h
+	"CEntity.h"
+	"Define.h"
+
+1375037869 source:c:\shared\isometric engine\isometric-engine\capp_oncleanup.cpp
+	"CApp.h"
+
+1375261542 source:c:\shared\isometric engine\isometric-engine\capp_oninit.cpp
+	"CApp.h"
+
+1375268334 source:c:\shared\isometric engine\isometric-engine\capp_onloop.cpp
+	"CApp.h"
+
+1375262777 source:c:\shared\isometric engine\isometric-engine\capp_onrender.cpp
+	"CApp.h"
+
+1375037167 source:c:\shared\isometric engine\isometric-engine\carea.cpp
+	"CArea.h"
+
+1375037167 source:c:\shared\isometric engine\isometric-engine\ccamera.cpp
+	"CCamera.h"
+
+1193323224 source:c:\shared\isometric engine\isometric-engine\cevent.cpp
+	"CEvent.h"
+
+1375247978 source:c:\shared\isometric engine\isometric-engine\cmap.cpp
+	"CMap.h"
+
+1375249223 source:c:\shared\isometric engine\isometric-engine\cplayer.cpp
+	"CPlayer.h"
+
+1375037167 source:c:\shared\isometric engine\isometric-engine\csurface.cpp
+	"CSurface.h"
+
+1375247705 source:c:\shared\isometric engine\isometric-engine\ctile.cpp
+	"CTile.h"
+
+1375264192 source:c:\shared\isometric engine\isometric-engine\capp_onevent.cpp
+	"CApp.h"
+
+1375263602 source:c:\shared\isometric engine\isometric-engine\centity.cpp
+	"CEntity.h"
+
+1375267722 source:c:\shared\isometric engine\isometric-engine\debug.cpp
+	"Debug.h"
+

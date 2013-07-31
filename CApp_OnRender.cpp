@@ -23,7 +23,9 @@ void CApp::Render() {
     }
 
 
-    Debug::RenderText("Hello World!", Surf_Display, 0, 0);
+    Debug::RenderText("Hello World!", 0, 0);
+    Debug::PlayerPos();
+    Debug::MousePos();
 	SDL_Flip(Surf_Display);
 }
 

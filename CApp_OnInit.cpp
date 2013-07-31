@@ -57,6 +57,8 @@ bool CApp::Init() {
     if(!(Debug::font = TTF_OpenFont("Times.ttf", 12)))
         return false;
 
+    Debug::Surf_Dest = Surf_Display;
+
     return true;
 }
 
