@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Arena" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CApp\;" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Arena.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="bin" />
+				<Option object_output="obj" />
+				<Option deps_output="dep" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Release;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL_image" />
+			<Add library="SDL_ttf" />
+			<Add library="SDL" />
+		</Linker>
+		<Unit filename="CAnimation.cpp" />
+		<Unit filename="CAnimation.h" />
+		<Unit filename="CApp.cpp">
+			<Option virtualFolder="CApp/" />
+		</Unit>
+		<Unit filename="CApp.h" />
+		<Unit filename="CApp_OnCleanup.cpp">
+			<Option virtualFolder="CApp/" />
+		</Unit>
+		<Unit filename="CApp_OnEvent.cpp">
+			<Option virtualFolder="CApp/" />
+		</Unit>
+		<Unit filename="CApp_OnInit.cpp">
+			<Option virtualFolder="CApp/" />
+		</Unit>
+		<Unit filename="CApp_OnLoop.cpp">
+			<Option virtualFolder="CApp/" />
+		</Unit>
+		<Unit filename="CApp_OnRender.cpp">
+			<Option virtualFolder="CApp/" />
+		</Unit>
+		<Unit filename="CArea.cpp" />
+		<Unit filename="CArea.h" />
+		<Unit filename="CCamera.cpp" />
+		<Unit filename="CCamera.h" />
+		<Unit filename="CEntity.cpp" />
+		<Unit filename="CEntity.h" />
+		<Unit filename="CEvent.cpp" />
+		<Unit filename="CEvent.h" />
+		<Unit filename="CMap.cpp" />
+		<Unit filename="CMap.h" />
+		<Unit filename="CPlayer.cpp" />
+		<Unit filename="CPlayer.h" />
+		<Unit filename="CSurface.cpp" />
+		<Unit filename="CSurface.h" />
+		<Unit filename="CTile.cpp" />
+		<Unit filename="CTile.h" />
+		<Unit filename="Debug.cpp" />
+		<Unit filename="Debug.h" />
+		<Unit filename="Define.h" />
+		<Unit filename="Helper.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

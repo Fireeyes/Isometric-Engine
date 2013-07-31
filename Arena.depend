@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1375249920 source:c:\users\neagu cristian\desktop\development\arena\canimation.cpp
+	"CAnimation.h"
+
+1375037058 c:\users\neagu cristian\desktop\development\arena\canimation.h
+	<SDL/SDL.h>
+
+1375037869 source:c:\users\neagu cristian\desktop\development\arena\capp_oncleanup.cpp
+	"CApp.h"
+
+1375253414 c:\users\neagu cristian\desktop\development\arena\capp.h
+	<SDL/SDL.h>
+	"SDL/SDL_ttf.h"
+	"Define.h"
+	"Debug.h"
+	"Helper.h"
+	"CArea.h"
+	"CCamera.h"
+	"CEntity.h"
+	"CEvent.h"
+	"CSurface.h"
+	"CPlayer.h"
+
+1375174263 c:\users\neagu cristian\desktop\development\arena\define.h
+
+1375037167 c:\users\neagu cristian\desktop\development\arena\carea.h
+	"CMap.h"
+
+1375173857 c:\users\neagu cristian\desktop\development\arena\cmap.h
+	<SDL/SDL.h>
+	<vector>
+	"CTile.h"
+	"CSurface.h"
+
+1375247727 c:\users\neagu cristian\desktop\development\arena\ctile.h
+	"Define.h"
+	<vector>
+
+1375037167 c:\users\neagu cristian\desktop\development\arena\csurface.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+
+1375037167 c:\users\neagu cristian\desktop\development\arena\ccamera.h
+	<SDL/SDL.h>
+	"Define.h"
+
+1375249816 c:\users\neagu cristian\desktop\development\arena\centity.h
+	<string.h>
+	<iostream>
+	<utility>
+	<vector>
+	<map>
+	"CAnimation.h"
+	"CSurface.h"
+
+1374951221 c:\users\neagu cristian\desktop\development\arena\cevent.h
+	<SDL/SDL.h>
+
+1375249129 c:\users\neagu cristian\desktop\development\arena\cplayer.h
+	"CEntity.h"
+	"Define.h"
+
+1375249944 source:c:\users\neagu cristian\desktop\development\arena\capp_onevent.cpp
+	"CApp.h"
+
+1375252851 source:c:\users\neagu cristian\desktop\development\arena\capp_oninit.cpp
+	"CApp.h"
+
+1375248445 source:c:\users\neagu cristian\desktop\development\arena\capp_onloop.cpp
+	"CApp.h"
+
+1375253297 source:c:\users\neagu cristian\desktop\development\arena\capp_onrender.cpp
+	"CApp.h"
+
+1375037167 source:c:\users\neagu cristian\desktop\development\arena\carea.cpp
+	"CArea.h"
+
+1375037167 source:c:\users\neagu cristian\desktop\development\arena\ccamera.cpp
+	"CCamera.h"
+
+1375249794 source:c:\users\neagu cristian\desktop\development\arena\centity.cpp
+	"CEntity.h"
+
+1193323224 source:c:\users\neagu cristian\desktop\development\arena\cevent.cpp
+	"CEvent.h"
+
+1375247978 source:c:\users\neagu cristian\desktop\development\arena\cmap.cpp
+	"CMap.h"
+
+1375249223 source:c:\users\neagu cristian\desktop\development\arena\cplayer.cpp
+	"CPlayer.h"
+
+1375037167 source:c:\users\neagu cristian\desktop\development\arena\csurface.cpp
+	"CSurface.h"
+
+1375247705 source:c:\users\neagu cristian\desktop\development\arena\ctile.cpp
+	"CTile.h"
+
+1375173418 source:c:\users\neagu cristian\desktop\development\arena\capp.cpp
+	"CApp.h"
+
+1375252714 c:\users\neagu cristian\desktop\development\arena\debug.h
+	"SDL/SDL_ttf.h"
+
+1375252959 source:c:\users\neagu cristian\desktop\development\arena\debug.cpp
+	"Debug.h"
+
+1375253339 c:\users\neagu cristian\desktop\development\arena\helper.cpp
+	"SDL/SDL.h"
+	"SDL/SDL_ttf.h"
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+
+1375253427 c:\users\neagu cristian\desktop\development\arena\helper.h
+
