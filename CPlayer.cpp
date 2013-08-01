@@ -75,7 +75,7 @@ void CPlayer::Loop()
                         CPlayer::Player.SetAnimation("WalkSouth");
         }
 
-        CPlayer::Player.MoveBy(vx, vy);
+        CPlayer::Player.MoveBy(- vx, - vy);
     }
     else
     {

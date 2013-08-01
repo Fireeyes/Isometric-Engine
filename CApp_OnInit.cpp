@@ -50,8 +50,8 @@ bool CApp::Init() {
 
     CPlayer::Player.SetAnimation("IdleSouth");
 
-    CPlayer::Player.X = WWIDTH  / 2;
-    CPlayer::Player.Y = WHEIGHT / 2;
+    CPlayer::Player.X = 0;
+    CPlayer::Player.Y = 0;
 
     CEntity::EntityList.push_back(&CPlayer::Player);
 

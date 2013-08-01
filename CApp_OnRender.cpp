@@ -11,11 +11,12 @@ void CApp::Render() {
 
 	SDL_FillRect(Surf_Display, &Rect, 0);
 
-	CArea::AreaControl.Render(Surf_Display, CCamera::CameraControl.GetX(), CCamera::CameraControl.GetY());
+	CArea::AreaControl.Render(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
 
     //--------------------------------------------------------------------------
     // Entities
     //--------------------------------------------------------------------------
+
     for(int i = 0;i < CEntity::EntityList.size();i++) {
         if(!CEntity::EntityList[i]) continue;
 

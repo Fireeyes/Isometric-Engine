@@ -60,7 +60,7 @@ void CMap::Render(SDL_Surface* Surf_Display, int MapX, int MapY) {
 				continue;
 			}
 			int tX, tY;
-            //Rectangle((x * 32) - offsetX, (y * 32) - offsetY, 32, 32),
+
 			tX = MapX + X * TILE_WIDTH;
 			tY = MapY + Y * TILE_HEIGHT / 2;
 			if(Y % 2 == 1)

@@ -1,5 +1,5 @@
 #include "Debug.h"
-
+#include "CCamera.h"
 TTF_Font*     Debug::font;
 SDL_Surface*  Debug::Surf_Dest;
     const double PI = 3.141592;
@@ -26,9 +26,9 @@ void Debug::PlayerPos()
     SDL_Color white = {255, 255, 255};
     SDL_Surface* text_solid = NULL;
     std::string debugText = "Player Position:";
-    debugText.append(Int2String((int) CPlayer::Player.X));
+    debugText.append(Int2String((int) CCamera::CameraControl.GetX()));
     debugText.append(" ");
-    debugText.append(Int2String((int) CPlayer::Player.Y));
+    debugText.append(Int2String((int) CCamera::CameraControl.GetY()));
 
     text_solid = TTF_RenderText_Solid(font, debugText.c_str(), white);
     SDL_Rect DestR;
@@ -45,9 +45,9 @@ void Debug::MousePos()
     SDL_Color white = {255, 255, 255};
     SDL_Surface* text_solid = NULL;
     std::string debugText = "Mouse Position:";
-    debugText.append(Int2String(tan(PI / 6)));
+    debugText.append(Int2String(CPlayer::Player.X));
     debugText.append(" ");
-    debugText.append(Int2String(y));
+    debugText.append(Int2String(CPlayer::Player.Y));
 
     text_solid = TTF_RenderText_Solid(font, debugText.c_str(), white);
     SDL_Rect DestR;

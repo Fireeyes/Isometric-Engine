@@ -10,22 +10,22 @@ void CApp::OnEvent(SDL_Event* Event) {
 void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 	switch(sym) {
         case SDLK_UP:
-            CPlayer::Player.MoveBy( 0,  2);
+            CPlayer::Player.MoveBy( 0, -2);
             CPlayer::Player.SetAnimation("WalkNorth");
             CPlayer::Player.SetDirection(DIRECTION_NORTH);
             break;
 		case SDLK_DOWN:
-		    CPlayer::Player.MoveBy( 0, -2);
+		    CPlayer::Player.MoveBy( 0,  2);
 		    CPlayer::Player.SetAnimation("WalkSouth");
 		    CPlayer::Player.SetDirection(DIRECTION_SOUTH);
 		    break;
 		case SDLK_LEFT:
-		    CPlayer::Player.MoveBy( 2,  0);
+		    CPlayer::Player.MoveBy(-2,  0);
 		    CPlayer::Player.SetAnimation("WalkWest");
 		    CPlayer::Player.SetDirection(DIRECTION_WEST);
 		    break;
 		case SDLK_RIGHT:
-		    CPlayer::Player.MoveBy(-2,  0);
+		    CPlayer::Player.MoveBy( 2,  0);
 		    CPlayer::Player.SetAnimation("WalkEast");
 		    CPlayer::Player.SetDirection(DIRECTION_EAST);
 		    break;

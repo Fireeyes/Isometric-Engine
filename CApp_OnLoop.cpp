@@ -11,7 +11,7 @@ void CApp::Loop() {
 
         CEntity::EntityList[i]->Loop();
     }
-    CCamera::CameraControl.SetPos(CPlayer::Player.X, CPlayer::Player.Y);
+    CCamera::CameraControl.SetPos(CPlayer::Player.X - 320, CPlayer::Player.Y - 240);
 
 }
 
