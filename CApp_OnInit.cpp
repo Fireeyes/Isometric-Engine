@@ -1,7 +1,7 @@
 //==============================================================================
+
 #include "CApp.h"
-extern CPlayer Player;
-//using namespace CPlayer;
+
 //==============================================================================
 bool CApp::Init() {
 
@@ -49,9 +49,12 @@ bool CApp::Init() {
     CPlayer::Player.AddAnimation("WalkSouthWest", 128 * 4, 128 * 7, 8);
 
     CPlayer::Player.SetAnimation("IdleSouth");
+
     CPlayer::Player.X = WWIDTH  / 2;
     CPlayer::Player.Y = WHEIGHT / 2;
+
     CEntity::EntityList.push_back(&CPlayer::Player);
+
     CPlayer::Player.SetAnimation("IdleWest");
 
     if(!(Debug::font = TTF_OpenFont("Times.ttf", 12)))

@@ -179,17 +179,18 @@
 1374951221 c:\shared\isometric engine\isometric-engine\cevent.h
 	<SDL/SDL.h>
 
-1375249129 c:\shared\isometric engine\isometric-engine\cplayer.h
+1375346992 c:\shared\isometric engine\isometric-engine\cplayer.h
+	<math.h>
 	"CEntity.h"
 	"Define.h"
 
 1375037869 source:c:\shared\isometric engine\isometric-engine\capp_oncleanup.cpp
 	"CApp.h"
 
-1375261542 source:c:\shared\isometric engine\isometric-engine\capp_oninit.cpp
+1375290509 source:c:\shared\isometric engine\isometric-engine\capp_oninit.cpp
 	"CApp.h"
 
-1375268334 source:c:\shared\isometric engine\isometric-engine\capp_onloop.cpp
+1375346851 source:c:\shared\isometric engine\isometric-engine\capp_onloop.cpp
 	"CApp.h"
 
 1375262777 source:c:\shared\isometric engine\isometric-engine\capp_onrender.cpp
@@ -207,7 +208,7 @@
 1375247978 source:c:\shared\isometric engine\isometric-engine\cmap.cpp
 	"CMap.h"
 
-1375249223 source:c:\shared\isometric engine\isometric-engine\cplayer.cpp
+1375346888 source:c:\shared\isometric engine\isometric-engine\cplayer.cpp
 	"CPlayer.h"
 
 1375037167 source:c:\shared\isometric engine\isometric-engine\csurface.cpp
@@ -222,6 +223,6 @@
 1375263602 source:c:\shared\isometric engine\isometric-engine\centity.cpp
 	"CEntity.h"
 
-1375267722 source:c:\shared\isometric engine\isometric-engine\debug.cpp
+1375345237 source:c:\shared\isometric engine\isometric-engine\debug.cpp
 	"Debug.h"
 

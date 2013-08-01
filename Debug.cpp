@@ -2,7 +2,7 @@
 
 TTF_Font*     Debug::font;
 SDL_Surface*  Debug::Surf_Dest;
-
+    const double PI = 3.141592;
 std::string Debug::Int2String(float i) {
     std::stringstream sstream;
 
@@ -44,8 +44,8 @@ void Debug::MousePos()
 
     SDL_Color white = {255, 255, 255};
     SDL_Surface* text_solid = NULL;
-    std::string debugText = "Player Position:";
-    debugText.append(Int2String(x));
+    std::string debugText = "Mouse Position:";
+    debugText.append(Int2String(tan(PI / 6)));
     debugText.append(" ");
     debugText.append(Int2String(y));
 
@@ -59,13 +59,13 @@ void Debug::MousePos()
 
     x = x - WWIDTH / 2;
     y = WHEIGHT / 2 - y;
-    const double PI = 3.141592;
+
     float slope =  (float) y / x;
     double angle = atan(slope);
 
     float vx = sin(angle);
 
-    debugText.append(Int2String(vx));
+    debugText.append(Int2String(slope));
     text_solid = TTF_RenderText_Solid(font, debugText.c_str(), white);
 
     DestR.x = 0;
