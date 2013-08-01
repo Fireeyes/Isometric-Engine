@@ -45,9 +45,9 @@ void Debug::MousePos()
     SDL_Color white = {255, 255, 255};
     SDL_Surface* text_solid = NULL;
     std::string debugText = "Mouse Position:";
-    debugText.append(Int2String(CPlayer::Player.X));
+    debugText.append(Int2String(x));
     debugText.append(" ");
-    debugText.append(Int2String(CPlayer::Player.Y));
+    debugText.append(Int2String(y));
 
     text_solid = TTF_RenderText_Solid(font, debugText.c_str(), white);
     SDL_Rect DestR;

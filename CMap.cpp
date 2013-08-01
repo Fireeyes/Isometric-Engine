@@ -65,7 +65,7 @@ void CMap::Render(SDL_Surface* Surf_Display, int MapX, int MapY) {
 			tY = MapY + Y * TILE_HEIGHT / 2;
 			if(Y % 2 == 1)
             {
-                tX = MapX + X * TILE_WIDTH - TILE_WIDTH / 2;
+                tX = MapX + X * TILE_WIDTH + TILE_WIDTH / 2;
 
             }
 

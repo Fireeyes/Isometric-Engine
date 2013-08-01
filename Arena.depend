@@ -190,7 +190,7 @@
 1375348215 source:c:\shared\isometric engine\isometric-engine\capp_oninit.cpp
 	"CApp.h"
 
-1375348407 source:c:\shared\isometric engine\isometric-engine\capp_onloop.cpp
+1375366752 source:c:\shared\isometric engine\isometric-engine\capp_onloop.cpp
 	"CApp.h"
 
 1375348700 source:c:\shared\isometric engine\isometric-engine\capp_onrender.cpp
@@ -205,7 +205,7 @@
 1193323224 source:c:\shared\isometric engine\isometric-engine\cevent.cpp
 	"CEvent.h"
 
-1375348557 source:c:\shared\isometric engine\isometric-engine\cmap.cpp
+1375366808 source:c:\shared\isometric engine\isometric-engine\cmap.cpp
 	"CMap.h"
 
 1375348336 source:c:\shared\isometric engine\isometric-engine\cplayer.cpp
