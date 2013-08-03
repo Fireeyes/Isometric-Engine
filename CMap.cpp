@@ -4,11 +4,14 @@
 //=============================================================================
 CMap::CMap() {
 	Surf_Tileset = NULL;
+    MouseMapTexture = NULL;
 }
 
 //=============================================================================
 bool CMap::Load(char* File) {
     TileList.clear();
+    MouseMapTexture = CSurface::Load("./textures/mousemap.png");
+
 
     FILE* FileHandle = fopen(File, "r");
 
@@ -45,7 +48,9 @@ bool CMap::Load(char* File) {
 }
 
 //-----------------------------------------------------------------------------
-void CMap::Render(SDL_Surface* Surf_Display, int MapX, int MapY) {
+void CMap::Render(SDL_Surface* MouseMap, SDL_Surface* Surf_Display, int MapX, int MapY) {
+	bool oddRow = false;
+
 	if(Surf_Tileset == NULL) return;
 
 	int TilesetWidth  = Surf_Tileset->w / TILE_WIDTH;
@@ -55,6 +60,7 @@ void CMap::Render(SDL_Surface* Surf_Display, int MapX, int MapY) {
 
 	for(int Y = 0;Y < MAP_HEIGHT;Y++) {
 		for(int X = 0;X < MAP_WIDTH;X++) {
+            oddRow = false;
 			if(TileList[ID].TypeID == TILE_TYPE_NONE) {
 				ID++;
 				continue;
@@ -66,8 +72,10 @@ void CMap::Render(SDL_Surface* Surf_Display, int MapX, int MapY) {
 			if(Y % 2 == 1)
             {
                 tX = MapX + X * TILE_WIDTH + TILE_WIDTH / 2;
+                oddRow = true;
 
             }
+
 
 
 			int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_WIDTH;
@@ -81,6 +89,16 @@ void CMap::Render(SDL_Surface* Surf_Display, int MapX, int MapY) {
                            TilesetY,
                            TILE_WIDTH,
                            TILE_HEIGHT);
+            if(oddRow == false)
+                CSurface::Draw(Surf_Display,
+                               MouseMapTexture,
+                               tX,
+                               tY,
+                               0,
+                               0,
+                               TILE_WIDTH,
+                               TILE_HEIGHT);
+
 
             for(int i=0; i < TileList[ID].HeightTile.size(); i++)
             {

@@ -76,6 +76,7 @@
 		<Unit filename="Debug.cpp" />
 		<Unit filename="Debug.h" />
 		<Unit filename="Define.h" />
+		<Unit filename="Helper.cpp" />
 		<Unit filename="Helper.h" />
 		<Extensions>
 			<code_completion />

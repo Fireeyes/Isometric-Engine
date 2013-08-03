@@ -25,6 +25,7 @@ class CApp : public CEvent {
         bool            Running;
 
         SDL_Surface*    Surf_Display;
+        SDL_Surface*    Surf_MouseMap;
 
     public:
         CApp();

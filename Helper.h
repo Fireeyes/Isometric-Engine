@@ -1,6 +1,6 @@
 
-#ifndef _HELPER_CPP_
-#define _HELPER_CPP_
+#ifndef _HELPER_H_
+#define _HELPER_H_
 
 #include "SDL/SDL.h"
 #include "SDL/SDL_ttf.h"
@@ -9,13 +9,13 @@
 #include <string>
 #include <sstream>
 
-std::string Int2String(int i) {
-    std::stringstream sstream;
+class Helper
+{
+    static void put_pixel32( SDL_Surface *surface, int x, int y, Uint32 pixel);
 
-    sstream << i;
+    static Uint32 get_pixel32( SDL_Surface *surface, int x, int y );
 
-    return sstream.str();
-}
+};
 
 #endif // _HELPER_CPP_
 

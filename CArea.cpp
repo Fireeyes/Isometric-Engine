@@ -57,7 +57,7 @@ bool CArea::Load(char* File) {
 }
 
 //-----------------------------------------------------------------------------
-void CArea::Render(SDL_Surface* Surf_Display, int CameraX, int CameraY) {
+void CArea::Render(SDL_Surface* MouseMap, SDL_Surface* Surf_Display, int CameraX, int CameraY) {
 	int MapWidth  = MAP_WIDTH * TILE_WIDTH;
 	int MapHeight = MAP_HEIGHT * TILE_HEIGHT;
 
@@ -72,7 +72,7 @@ void CArea::Render(SDL_Surface* Surf_Display, int CameraX, int CameraY) {
 		int X = ((ID % AreaSize) * MapWidth) + CameraX;
 		int Y = ((ID / AreaSize) * MapHeight) + CameraY;
 
-		MapList[ID].Render(Surf_Display, X, Y);
+		MapList[ID].Render(MouseMap, Surf_Display, X, Y);
 	}
 }
 

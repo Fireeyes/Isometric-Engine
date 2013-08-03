@@ -22,7 +22,7 @@ class CArea {
 
         bool    Load(char* File);
 
-        void    Render(SDL_Surface* Surf_Display, int CameraX, int CameraY);
+        void    Render(SDL_Surface* MouseMap, SDL_Surface* Surf_Display, int CameraX, int CameraY);
 
         void    Cleanup();
 };

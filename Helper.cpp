@@ -1,20 +1,19 @@
-#ifndef _HELPER_CPP_
-#define _HELPER_CPP_
+#include "Helper.h"
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_ttf.h"
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
+Uint32 Helper::get_pixel32( SDL_Surface *surface, int x, int y )
+{
+    //Convert the pixels to 32 bit
+    Uint32 *pixels = (Uint32 *)surface->pixels;
 
-std::string Int2String(int i) {
-    std::stringstream sstream;
-
-    sstream << i;
-
-    return sstream.str();
+    //Get the requested pixel
+    return pixels[ ( y * surface->w ) + x ];
 }
 
-#endif // _HELPER_CPP_
+void Helper::put_pixel32( SDL_Surface *surface, int x, int y, Uint32 pixel )
+{
+    //Convert the pixels to 32 bit
+    Uint32 *pixels = (Uint32 *)surface->pixels;
 
+    //Set the pixel
+    pixels[ ( y * surface->w ) + x ] = pixel;
+}

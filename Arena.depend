@@ -124,7 +124,7 @@
 1375173418 source:c:\shared\isometric engine\isometric-engine\capp.cpp
 	"CApp.h"
 
-1375263827 c:\shared\isometric engine\isometric-engine\capp.h
+1375515986 c:\shared\isometric engine\isometric-engine\capp.h
 	<SDL/SDL.h>
 	<math.h>
 	"SDL/SDL_ttf.h"
@@ -146,10 +146,10 @@
 	"CPlayer.h"
 	<math.h>
 
-1375037167 c:\shared\isometric engine\isometric-engine\carea.h
+1375516622 c:\shared\isometric engine\isometric-engine\carea.h
 	"CMap.h"
 
-1375173857 c:\shared\isometric engine\isometric-engine\cmap.h
+1375516536 c:\shared\isometric engine\isometric-engine\cmap.h
 	<SDL/SDL.h>
 	<vector>
 	"CTile.h"
@@ -193,10 +193,10 @@
 1375366752 source:c:\shared\isometric engine\isometric-engine\capp_onloop.cpp
 	"CApp.h"
 
-1375348700 source:c:\shared\isometric engine\isometric-engine\capp_onrender.cpp
+1375516648 source:c:\shared\isometric engine\isometric-engine\capp_onrender.cpp
 	"CApp.h"
 
-1375037167 source:c:\shared\isometric engine\isometric-engine\carea.cpp
+1375516589 source:c:\shared\isometric engine\isometric-engine\carea.cpp
 	"CArea.h"
 
 1375037167 source:c:\shared\isometric engine\isometric-engine\ccamera.cpp
@@ -205,7 +205,7 @@
 1193323224 source:c:\shared\isometric engine\isometric-engine\cevent.cpp
 	"CEvent.h"
 
-1375366808 source:c:\shared\isometric engine\isometric-engine\cmap.cpp
+1375517493 source:c:\shared\isometric engine\isometric-engine\cmap.cpp
 	"CMap.h"
 
 1375348336 source:c:\shared\isometric engine\isometric-engine\cplayer.cpp
@@ -223,7 +223,18 @@
 1375263602 source:c:\shared\isometric engine\isometric-engine\centity.cpp
 	"CEntity.h"
 
-1375348152 source:c:\shared\isometric engine\isometric-engine\debug.cpp
+1375367083 source:c:\shared\isometric engine\isometric-engine\debug.cpp
 	"Debug.h"
 	"CCamera.h"
+
+1375515849 source:c:\shared\isometric engine\isometric-engine\helper.cpp
+	"Helper.h"
+
+1375516025 c:\shared\isometric engine\isometric-engine\helper.h
+	"SDL/SDL.h"
+	"SDL/SDL_ttf.h"
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
 

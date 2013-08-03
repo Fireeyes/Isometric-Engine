@@ -11,7 +11,7 @@ void CApp::Render() {
 
 	SDL_FillRect(Surf_Display, &Rect, 0);
 
-	CArea::AreaControl.Render(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
+	CArea::AreaControl.Render(Surf_MouseMap, Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
 
     //--------------------------------------------------------------------------
     // Entities

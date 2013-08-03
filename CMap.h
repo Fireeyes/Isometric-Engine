@@ -12,6 +12,7 @@
 class CMap {
 	public:
 		SDL_Surface*			Surf_Tileset;
+		SDL_Surface*   			MouseMapTexture;
 
 	private:
 		std::vector<CTile>      TileList;
@@ -22,7 +23,7 @@ class CMap {
 	public:
 		bool Load(char* File);
 
-		void Render(SDL_Surface* Surf_Display, int MapX, int MapY);
+		void Render(SDL_Surface* MouseMap, SDL_Surface* Surf_Display, int MapX, int MapY);
 };
 
 //==============================================================================
